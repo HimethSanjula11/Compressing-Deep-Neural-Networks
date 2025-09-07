@@ -1,0 +1,99 @@
+====================================================================================================
+ALEXNET FP32 BASELINE - COMPREHENSIVE ANALYSIS REPORT
+MSc Artificial Intelligence Dissertation Project
+====================================================================================================
+
+1. EXPERIMENT METADATA
+--------------------------------------------------
+Experiment Name: AlexNet_FP32_Baseline
+Timestamp: 2025-08-26T21:18:30.642711
+Pytorch Version: 2.8.0+cu128
+Cuda Version: 12.8
+Device: cuda
+Random Seed: 42
+Reproducibility Notes: Fixed random seed, deterministic algorithms enabled
+
+2. MODEL ARCHITECTURE SPECIFICATIONS
+--------------------------------------------------
+Architecture: AlexNet
+Precision: FP32
+Total Parameters: 57,012,034
+Trainable Parameters: 57,012,034
+Model Size: 217.48 MB
+FLOPs per Forward Pass: 710.119M
+Input Resolution: (224, 224)
+Number of Classes: 2
+Data Type: torch.float32
+
+3. TRAINING CONFIGURATION
+--------------------------------------------------
+Epochs Trained: 10
+Batch Size: 64
+Optimizer: AdamW
+Learning Rate: backbone=0.0001, head=0.001
+Weight Decay: 0.0001
+Scheduler: ReduceLROnPlateau
+Early Stopping Patience: 10
+Loss Function: CrossEntropyLoss with Label Smoothing (0.1)
+Data Augmentation: RandomCrop, RandomHorizontalFlip, ColorJitter, RandomRotation, RandomAffine
+Mixed Precision: False
+
+4. TRAINING RESULTS
+--------------------------------------------------
+Epochs Trained: 10
+Best Validation Accuracy: 97.3000%
+Final Training Accuracy: 96.9000%
+Final Validation Accuracy: 96.5500%
+Final Training Loss: 0.256859
+Final Validation Loss: 0.259839
+Convergence Epoch: 9
+Early Stopping Triggered: False
+
+5. INFERENCE PERFORMANCE ANALYSIS
+--------------------------------------------------
+Final Test Accuracy: 97.3000%
+
+Benchmark Results by Batch Size:
+--------------------------------------------------------------------------------
+Batch Size   Mean Time (ms)  Per Image (ms)  Throughput (FPS)
+--------------------------------------------------------------------------------
+1            2.22            2.22            450.0          
+8            8.32            1.04            961.3          
+16           9.38            0.59            1705.1         
+32           14.56           0.46            2197.0         
+64           27.90           0.44            2293.9         
+
+Memory Usage Analysis:
+------------------------------
+Model Size on Disk: 217.48 MB
+GPU Runtime Memory: 36.75 MB
+CPU Runtime Memory: 12.05 MB
+
+Inference Methodology:
+------------------------------
+• Warm-up Passes: 10 runs before benchmarking
+• Benchmark Runs: 100 iterations per batch size
+• Batch Sizes Tested: [1, 8, 16, 32, 64]
+• Backend: PyTorch native (CPU/GPU)
+• Synchronization: CUDA synchronization enabled
+• Reproducibility: Fixed random seed (42)
+
+6. TRAINING STABILITY ANALYSIS
+--------------------------------------------------
+• Best accuracy achieved at epoch 9
+• Early stopping: No
+• Loss/accuracy curves consistent with healthy optimization
+
+7. BASELINE REFERENCE FOR FUTURE COMPARISONS
+--------------------------------------------------
+This FP32 AlexNet model serves as the reference baseline for:
+• Quantization experiments (FP16/INT8/QAT/PTQ)
+• Compression techniques & hardware studies
+• Architecture optimization
+
+Key Baseline Metrics to Track:
+• Accuracy: 97.30%
+• Model Size: 217.48 MB
+• Parameter Count: 57,012,034
+• Computational Cost: 710.119M
+• Inference Latency: 2.22 ms

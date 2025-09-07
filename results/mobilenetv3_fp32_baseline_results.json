@@ -1,0 +1,1419 @@
+{
+  "architecture": "MobileNetV3-Small",
+  "precision": "FP32",
+  "total_parameters": 1519906,
+  "trainable_parameters": 1519906,
+  "model_size_bytes": 6079624,
+  "model_size_mb": 5.797981262207031,
+  "flops_formatted": "61.456M",
+  "layer_breakdown": [
+    {
+      "Layer Name": "features.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 432,
+      "Percentage": 0.028422810358008983,
+      "Details": {
+        "input_channels": 3,
+        "output_channels": 16,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 32,
+      "Percentage": 0.0021053933598525173,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.1.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 144,
+      "Percentage": 0.009474270119336327,
+      "Details": {
+        "input_channels": 16,
+        "output_channels": 16,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.1.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 32,
+      "Percentage": 0.0021053933598525173,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.1.block.1.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 136,
+      "Percentage": 0.008947921779373199,
+      "Details": {
+        "input_channels": 16,
+        "output_channels": 8,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.1.block.1.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 144,
+      "Percentage": 0.009474270119336327,
+      "Details": {
+        "input_channels": 8,
+        "output_channels": 16,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.1.block.2.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 256,
+      "Percentage": 0.016843146878820138,
+      "Details": {
+        "input_channels": 16,
+        "output_channels": 16,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.1.block.2.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 32,
+      "Percentage": 0.0021053933598525173,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.2.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 1152,
+      "Percentage": 0.07579416095469062,
+      "Details": {
+        "input_channels": 16,
+        "output_channels": 72,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.2.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 144,
+      "Percentage": 0.009474270119336327,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.2.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 648,
+      "Percentage": 0.04263421553701347,
+      "Details": {
+        "input_channels": 72,
+        "output_channels": 72,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.2.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 144,
+      "Percentage": 0.009474270119336327,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.2.block.2.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 1728,
+      "Percentage": 0.11369124143203593,
+      "Details": {
+        "input_channels": 72,
+        "output_channels": 24,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.2.block.2.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 48,
+      "Percentage": 0.0031580900397787763,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.3.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 2112,
+      "Percentage": 0.13895596175026612,
+      "Details": {
+        "input_channels": 24,
+        "output_channels": 88,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.3.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 176,
+      "Percentage": 0.011579663479188845,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.3.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 792,
+      "Percentage": 0.0521084856563498,
+      "Details": {
+        "input_channels": 88,
+        "output_channels": 88,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.3.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 176,
+      "Percentage": 0.011579663479188845,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.3.block.2.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 2112,
+      "Percentage": 0.13895596175026612,
+      "Details": {
+        "input_channels": 88,
+        "output_channels": 24,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.3.block.2.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 48,
+      "Percentage": 0.0031580900397787763,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.4.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 2304,
+      "Percentage": 0.15158832190938124,
+      "Details": {
+        "input_channels": 24,
+        "output_channels": 96,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.4.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 192,
+      "Percentage": 0.012632360159115105,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.4.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 2400,
+      "Percentage": 0.1579045019889388,
+      "Details": {
+        "input_channels": 96,
+        "output_channels": 96,
+        "kernel_size": [
+          5,
+          5
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.4.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 192,
+      "Percentage": 0.012632360159115105,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.4.block.2.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 2328,
+      "Percentage": 0.15316736692927063,
+      "Details": {
+        "input_channels": 96,
+        "output_channels": 24,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.4.block.2.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 2400,
+      "Percentage": 0.1579045019889388,
+      "Details": {
+        "input_channels": 24,
+        "output_channels": 96,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.4.block.3.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 3840,
+      "Percentage": 0.25264720318230205,
+      "Details": {
+        "input_channels": 96,
+        "output_channels": 40,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.4.block.3.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 80,
+      "Percentage": 0.0052634833996312936,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.5.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 9600,
+      "Percentage": 0.6316180079557552,
+      "Details": {
+        "input_channels": 40,
+        "output_channels": 240,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.5.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 480,
+      "Percentage": 0.031580900397787756,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.5.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 6000,
+      "Percentage": 0.39476125497234693,
+      "Details": {
+        "input_channels": 240,
+        "output_channels": 240,
+        "kernel_size": [
+          5,
+          5
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.5.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 480,
+      "Percentage": 0.031580900397787756,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.5.block.2.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 15424,
+      "Percentage": 1.0147995994489134,
+      "Details": {
+        "input_channels": 240,
+        "output_channels": 64,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.5.block.2.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 15600,
+      "Percentage": 1.026379262928102,
+      "Details": {
+        "input_channels": 64,
+        "output_channels": 240,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.5.block.3.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 9600,
+      "Percentage": 0.6316180079557552,
+      "Details": {
+        "input_channels": 240,
+        "output_channels": 40,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.5.block.3.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 80,
+      "Percentage": 0.0052634833996312936,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.6.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 9600,
+      "Percentage": 0.6316180079557552,
+      "Details": {
+        "input_channels": 40,
+        "output_channels": 240,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.6.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 480,
+      "Percentage": 0.031580900397787756,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.6.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 6000,
+      "Percentage": 0.39476125497234693,
+      "Details": {
+        "input_channels": 240,
+        "output_channels": 240,
+        "kernel_size": [
+          5,
+          5
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.6.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 480,
+      "Percentage": 0.031580900397787756,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.6.block.2.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 15424,
+      "Percentage": 1.0147995994489134,
+      "Details": {
+        "input_channels": 240,
+        "output_channels": 64,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.6.block.2.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 15600,
+      "Percentage": 1.026379262928102,
+      "Details": {
+        "input_channels": 64,
+        "output_channels": 240,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.6.block.3.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 9600,
+      "Percentage": 0.6316180079557552,
+      "Details": {
+        "input_channels": 240,
+        "output_channels": 40,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.6.block.3.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 80,
+      "Percentage": 0.0052634833996312936,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.7.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 4800,
+      "Percentage": 0.3158090039778776,
+      "Details": {
+        "input_channels": 40,
+        "output_channels": 120,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.7.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 240,
+      "Percentage": 0.015790450198893878,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.7.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 3000,
+      "Percentage": 0.19738062748617347,
+      "Details": {
+        "input_channels": 120,
+        "output_channels": 120,
+        "kernel_size": [
+          5,
+          5
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.7.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 240,
+      "Percentage": 0.015790450198893878,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.7.block.2.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 3872,
+      "Percentage": 0.2547525965421546,
+      "Details": {
+        "input_channels": 120,
+        "output_channels": 32,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.7.block.2.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 3960,
+      "Percentage": 0.260542428281749,
+      "Details": {
+        "input_channels": 32,
+        "output_channels": 120,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.7.block.3.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 5760,
+      "Percentage": 0.3789708047734531,
+      "Details": {
+        "input_channels": 120,
+        "output_channels": 48,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.7.block.3.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 96,
+      "Percentage": 0.006316180079557553,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.8.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 6912,
+      "Percentage": 0.45476496572814373,
+      "Details": {
+        "input_channels": 48,
+        "output_channels": 144,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.8.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 288,
+      "Percentage": 0.018948540238672654,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.8.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 3600,
+      "Percentage": 0.2368567529834082,
+      "Details": {
+        "input_channels": 144,
+        "output_channels": 144,
+        "kernel_size": [
+          5,
+          5
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.8.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 288,
+      "Percentage": 0.018948540238672654,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.8.block.2.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 5800,
+      "Percentage": 0.38160254647326874,
+      "Details": {
+        "input_channels": 144,
+        "output_channels": 40,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.8.block.2.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 5904,
+      "Percentage": 0.38844507489278945,
+      "Details": {
+        "input_channels": 40,
+        "output_channels": 144,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.8.block.3.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 6912,
+      "Percentage": 0.45476496572814373,
+      "Details": {
+        "input_channels": 144,
+        "output_channels": 48,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.8.block.3.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 96,
+      "Percentage": 0.006316180079557553,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.9.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 13824,
+      "Percentage": 0.9095299314562875,
+      "Details": {
+        "input_channels": 48,
+        "output_channels": 288,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.9.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 576,
+      "Percentage": 0.03789708047734531,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.9.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 7200,
+      "Percentage": 0.4737135059668164,
+      "Details": {
+        "input_channels": 288,
+        "output_channels": 288,
+        "kernel_size": [
+          5,
+          5
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.9.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 576,
+      "Percentage": 0.03789708047734531,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.9.block.2.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 20808,
+      "Percentage": 1.3690320322440992,
+      "Details": {
+        "input_channels": 288,
+        "output_channels": 72,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.9.block.2.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 21024,
+      "Percentage": 1.3832434374231037,
+      "Details": {
+        "input_channels": 72,
+        "output_channels": 288,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.9.block.3.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 27648,
+      "Percentage": 1.819059862912575,
+      "Details": {
+        "input_channels": 288,
+        "output_channels": 96,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.9.block.3.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 192,
+      "Percentage": 0.012632360159115105,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.10.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 55296,
+      "Percentage": 3.63811972582515,
+      "Details": {
+        "input_channels": 96,
+        "output_channels": 576,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.10.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 1152,
+      "Percentage": 0.07579416095469062,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.10.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 14400,
+      "Percentage": 0.9474270119336328,
+      "Details": {
+        "input_channels": 576,
+        "output_channels": 576,
+        "kernel_size": [
+          5,
+          5
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.10.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 1152,
+      "Percentage": 0.07579416095469062,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.10.block.2.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 83088,
+      "Percentage": 5.466653858857061,
+      "Details": {
+        "input_channels": 576,
+        "output_channels": 144,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.10.block.2.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 83520,
+      "Percentage": 5.495076669215069,
+      "Details": {
+        "input_channels": 144,
+        "output_channels": 576,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.10.block.3.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 55296,
+      "Percentage": 3.63811972582515,
+      "Details": {
+        "input_channels": 576,
+        "output_channels": 96,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.10.block.3.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 192,
+      "Percentage": 0.012632360159115105,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.11.block.0.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 55296,
+      "Percentage": 3.63811972582515,
+      "Details": {
+        "input_channels": 96,
+        "output_channels": 576,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.11.block.0.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 1152,
+      "Percentage": 0.07579416095469062,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.11.block.1.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 14400,
+      "Percentage": 0.9474270119336328,
+      "Details": {
+        "input_channels": 576,
+        "output_channels": 576,
+        "kernel_size": [
+          5,
+          5
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.11.block.1.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 1152,
+      "Percentage": 0.07579416095469062,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.11.block.2.fc1",
+      "Layer Type": "Conv2d",
+      "Parameters": 83088,
+      "Percentage": 5.466653858857061,
+      "Details": {
+        "input_channels": 576,
+        "output_channels": 144,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.11.block.2.fc2",
+      "Layer Type": "Conv2d",
+      "Parameters": 83520,
+      "Percentage": 5.495076669215069,
+      "Details": {
+        "input_channels": 144,
+        "output_channels": 576,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.11.block.3.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 55296,
+      "Percentage": 3.63811972582515,
+      "Details": {
+        "input_channels": 576,
+        "output_channels": 96,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.11.block.3.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 192,
+      "Percentage": 0.012632360159115105,
+      "Details": {}
+    },
+    {
+      "Layer Name": "features.12.0",
+      "Layer Type": "Conv2d",
+      "Parameters": 55296,
+      "Percentage": 3.63811972582515,
+      "Details": {
+        "input_channels": 96,
+        "output_channels": 576,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Layer Name": "features.12.1",
+      "Layer Type": "BatchNorm2d",
+      "Parameters": 1152,
+      "Percentage": 0.07579416095469062,
+      "Details": {}
+    },
+    {
+      "Layer Name": "classifier.0",
+      "Layer Type": "Linear",
+      "Parameters": 590848,
+      "Percentage": 38.873982996316876,
+      "Details": {
+        "input_size": 576,
+        "output_size": 1024
+      }
+    },
+    {
+      "Layer Name": "classifier.3",
+      "Layer Type": "Linear",
+      "Parameters": 2050,
+      "Percentage": 0.13487676211555188,
+      "Details": {
+        "input_size": 1024,
+        "output_size": 2
+      }
+    }
+  ],
+  "num_classes": 2,
+  "input_resolution": [
+    224,
+    224
+  ],
+  "dtype": "torch.float32"
+}

@@ -1,0 +1,99 @@
+====================================================================================================
+RESNET-18 FP32 BASELINE - COMPREHENSIVE ANALYSIS REPORT
+MSc Artificial Intelligence Dissertation Project
+====================================================================================================
+
+1. EXPERIMENT METADATA
+--------------------------------------------------
+Experiment Name: ResNet18_FP32_Baseline
+Timestamp: 2025-08-26T20:13:14.823363
+Pytorch Version: 2.8.0+cu128
+Cuda Version: 12.8
+Device: cuda
+Random Seed: 42
+Reproducibility Notes: Fixed random seed, deterministic algorithms enabled
+
+2. MODEL ARCHITECTURE SPECIFICATIONS
+--------------------------------------------------
+Architecture: ResNet-18
+Precision: FP32
+Total Parameters: 11,177,538
+Trainable Parameters: 11,177,538
+Model Size: 42.64 MB
+FLOPs per Forward Pass: 1.824G
+Input Resolution: (224, 224)
+Number of Classes: 2
+Data Type: torch.float32
+
+3. TRAINING CONFIGURATION
+--------------------------------------------------
+Epochs Trained: 10
+Batch Size: 64
+Optimizer: AdamW
+Learning Rate: backbone=0.0001, head=0.001
+Weight Decay: 0.0001
+Scheduler: ReduceLROnPlateau
+Early Stopping Patience: 10
+Loss Function: CrossEntropyLoss with Label Smoothing (0.1)
+Data Augmentation: RandomCrop, RandomHorizontalFlip, ColorJitter, RandomRotation, RandomAffine
+Mixed Precision: False
+
+4. TRAINING RESULTS
+--------------------------------------------------
+Epochs Trained: 10
+Best Validation Accuracy: 98.9500%
+Final Training Accuracy: 99.5000%
+Final Validation Accuracy: 98.4500%
+Final Training Loss: 0.212986
+Final Validation Loss: 0.230540
+Convergence Epoch: 8
+Early Stopping Triggered: False
+
+5. INFERENCE PERFORMANCE ANALYSIS
+--------------------------------------------------
+Final Test Accuracy: 98.9500%
+
+Benchmark Results by Batch Size:
+--------------------------------------------------------------------------------
+Batch Size   Mean Time (ms)  Per Image (ms)  Throughput (FPS)
+--------------------------------------------------------------------------------
+1            2.84            2.84            352.7          
+8            15.43           1.93            518.6          
+16           22.75           1.42            703.2          
+32           43.65           1.36            733.1          
+64           85.68           1.34            746.9          
+
+Memory Usage Analysis:
+------------------------------
+Model Size on Disk: 42.64 MB
+GPU Runtime Memory: 36.75 MB
+CPU Runtime Memory: 0.41 MB
+
+Inference Methodology:
+------------------------------
+• Warm-up Passes: 10 runs before benchmarking
+• Benchmark Runs: 100 iterations per batch size
+• Batch Sizes Tested: [1, 8, 16, 32, 64]
+• Backend: PyTorch native (CPU/GPU)
+• Synchronization: CUDA synchronization enabled
+• Reproducibility: Fixed random seed (42)
+
+6. TRAINING STABILITY ANALYSIS
+--------------------------------------------------
+• Best accuracy achieved at epoch 8
+• Early stopping: No
+• Loss/accuracy curves consistent with healthy optimization
+
+7. BASELINE REFERENCE FOR FUTURE COMPARISONS
+--------------------------------------------------
+This FP32 ResNet-18 model serves as the reference baseline for:
+• Quantization experiments (FP16/INT8/QAT/PTQ)
+• Compression techniques & hardware studies
+• Architecture optimization
+
+Key Baseline Metrics to Track:
+• Accuracy: 98.95%
+• Model Size: 42.64 MB
+• Parameter Count: 11,177,538
+• Computational Cost: 1.824G
+• Inference Latency: 2.84 ms
