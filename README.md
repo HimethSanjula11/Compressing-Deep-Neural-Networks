@@ -22,14 +22,14 @@ Dataset: [Cats & Dogs (Kaggle)](https://www.kaggle.com/datasets/d4rklucif3r/cat-
 ---
 
 ## 📊 Dataset
-- **Cats vs Dogs dataset** (25,000 images).  
+- **Cats vs Dogs dataset** (10,000 images).  
 - Preprocessing: resize (224×224), normalization, random crops/flips/rotations.  
-- Split: 80% training (8,000 cats + 8,000 dogs), 20% testing (2,000 cats + 2,000 dogs).  
+- Split: 80% training (4000 cats + 4000 dogs), 20% testing (1000 cats + 1,000 dogs).  
 
 ---
 
 ## 🖥️ Experimental Environment
-- **Hardware:** Lenovo IdeaPad Gaming 3  
+- **Hardware:** 
   - AMD Ryzen 7 4800H (8C/16T)  
   - 16 GB DDR4 RAM  
   - NVIDIA GTX 1650 Ti (4 GB VRAM, no Tensor Cores)  
@@ -75,6 +75,15 @@ python models/alexnet_fp32.py
 python models/resnet18_fp32.py
 python models/mobilenetv3_fp32.py
 
+Run PTQ
+python quantization/ptq/alexnet_ptq_int8.py
+python quantization/ptq/resnet18_ptq_fp16.py
+python quantization/ptq/mobilenetv3_ptq_int16.py
+
+Run QAT
+python quantization/qat/alexnet_qat_int8.py
+python quantization/qat/resnet18_qat_int8.py
+python quantization/qat/mobilenetv3_qat_fp16.py
 
 ⚠️ Notes
 
@@ -83,3 +92,16 @@ This is a research prototype for MSc dissertation purposes.
 Not optimized for production deployment.
 
 Large model files (*.pth) are ignored using .gitignore.
+
+
+📊 Benchmarks
+
+Each experiment reports:
+
+Accuracy: Top-1, Precision, Recall, F1-score
+
+Latency: ms/image (mean + CI95 across N runs)
+
+Throughput: images/sec
+
+Model footprint: disk size + memory usage
