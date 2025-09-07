@@ -1,0 +1,2410 @@
+{
+  "performance": {
+    "fp32": {
+      "gpu": {
+        "accuracies": [
+          48.8,
+          48.8,
+          48.8,
+          48.8,
+          48.8
+        ],
+        "times": [
+          5.297115087509155,
+          5.066333532333374,
+          5.0673229694366455,
+          5.138498067855835,
+          5.083317279815674
+        ],
+        "memories": [
+          18614272,
+          0,
+          0,
+          0,
+          0
+        ],
+        "throughputs": [
+          377.56400738131845,
+          394.7627978371315,
+          394.68571710603794,
+          389.21878992445534,
+          393.4438654737133
+        ],
+        "per_image_times": [
+          0.0026485575437545776,
+          0.002533166766166687,
+          0.0025336614847183228,
+          0.0025692490339279173,
+          0.002541658639907837
+        ],
+        "precision": "FP32",
+        "accuracy": 48.8,
+        "accuracy_std": 0.0,
+        "time": 5.130517387390137,
+        "time_std": 0.08736067400279252,
+        "memory": 3722854.4,
+        "memory_std": 7445708.800000001,
+        "throughput": 389.9350355445313,
+        "throughput_std": 6.507587834641929,
+        "per_image_time": 0.0025652586936950683,
+        "per_image_time_std": 4.368033700139626e-05
+      },
+      "cpu": {
+        "accuracies": [
+          48.8,
+          48.8,
+          48.8,
+          48.8,
+          48.8
+        ],
+        "times": [
+          10.48026418685913,
+          10.455596685409546,
+          10.434809923171997,
+          10.47299337387085,
+          10.497857332229614
+        ],
+        "memories": [
+          48496640,
+          299008,
+          -278528,
+          53248,
+          57344
+        ],
+        "throughputs": [
+          190.8348839629192,
+          191.28511362636402,
+          191.666164954161,
+          190.96736993931603,
+          190.51506766621534
+        ],
+        "per_image_times": [
+          0.005240132093429565,
+          0.005227798342704773,
+          0.0052174049615859985,
+          0.0052364966869354245,
+          0.005248928666114807
+        ],
+        "precision": "FP32",
+        "accuracy": 48.8,
+        "accuracy_std": 0.0,
+        "time": 10.468304300308228,
+        "time_std": 0.021548850405949248,
+        "memory": 9725542.4,
+        "memory_std": 19386419.595857814,
+        "throughput": 191.0537200297951,
+        "throughput_std": 0.3934777536268484,
+        "per_image_time": 0.0052341521501541146,
+        "per_image_time_std": 1.077442520297464e-05
+      }
+    },
+    "int16_entropy": {
+      "gpu": {
+        "accuracies": [
+          48.95,
+          48.95,
+          48.95,
+          48.95,
+          48.95
+        ],
+        "times": [
+          5.318743705749512,
+          5.327345371246338,
+          5.2954113483428955,
+          5.2989020347595215,
+          5.284056663513184
+        ],
+        "memories": [
+          10094592,
+          0,
+          0,
+          0,
+          0
+        ],
+        "throughputs": [
+          376.0286471104105,
+          375.42150182241664,
+          377.6854843629597,
+          377.43668157676467,
+          378.4970766513829
+        ],
+        "per_image_times": [
+          0.002659371852874756,
+          0.002663672685623169,
+          0.0026477056741714476,
+          0.0026494510173797605,
+          0.0026420283317565916
+        ],
+        "precision": "INT16",
+        "accuracy": 48.95,
+        "accuracy_std": 0.0,
+        "time": 5.30489182472229,
+        "time_std": 0.015848642328525682,
+        "memory": 2018918.4,
+        "memory_std": 4037836.8,
+        "throughput": 377.0138783047869,
+        "throughput_std": 1.1257031586961848,
+        "per_image_time": 0.0026524459123611448,
+        "per_image_time_std": 7.924321164262955e-06
+      },
+      "cpu": {
+        "accuracies": [
+          48.95,
+          48.95,
+          48.95,
+          48.95,
+          48.95
+        ],
+        "times": [
+          10.68884015083313,
+          10.799467086791992,
+          10.72318720817566,
+          10.727767944335938,
+          10.679636478424072
+        ],
+        "memories": [
+          49152,
+          -188416,
+          61440,
+          167936,
+          -319488
+        ],
+        "throughputs": [
+          187.1110402791562,
+          185.19432337972012,
+          186.51171159962067,
+          186.43207145955864,
+          187.27229190249813
+        ],
+        "per_image_times": [
+          0.005344420075416565,
+          0.005399733543395996,
+          0.00536159360408783,
+          0.005363883972167968,
+          0.005339818239212036
+        ],
+        "precision": "INT16",
+        "accuracy": 48.95,
+        "accuracy_std": 0.0,
+        "time": 10.723779773712158,
+        "time_std": 0.04222377000198846,
+        "memory": -45875.2,
+        "memory_std": 179690.73104910002,
+        "throughput": 186.50428772411072,
+        "throughput_std": 0.7320185745516151,
+        "per_image_time": 0.005361889886856078,
+        "per_image_time_std": 2.1111885000994155e-05
+      }
+    },
+    "int16_mse": {
+      "gpu": {
+        "accuracies": [
+          48.8,
+          48.8,
+          48.8,
+          48.8,
+          48.8
+        ],
+        "times": [
+          5.239593744277954,
+          5.240159749984741,
+          5.249758720397949,
+          5.28765869140625,
+          5.260901927947998
+        ],
+        "memories": [
+          10094592,
+          0,
+          0,
+          0,
+          0
+        ],
+        "throughputs": [
+          381.70898310277516,
+          381.66775354622035,
+          380.9698895739714,
+          378.2392390890307,
+          380.16295064829217
+        ],
+        "per_image_times": [
+          0.002619796872138977,
+          0.0026200798749923706,
+          0.0026248793601989745,
+          0.002643829345703125,
+          0.002630450963973999
+        ],
+        "precision": "INT16",
+        "accuracy": 48.8,
+        "accuracy_std": 0.0,
+        "time": 5.255614566802978,
+        "time_std": 0.017802197414087655,
+        "memory": 2018918.4,
+        "memory_std": 4037836.8,
+        "throughput": 380.549763192058,
+        "throughput_std": 1.2851727498564096,
+        "per_image_time": 0.002627807283401489,
+        "per_image_time_std": 8.90109870704377e-06
+      },
+      "cpu": {
+        "accuracies": [
+          48.8,
+          48.8,
+          48.8,
+          48.8,
+          48.8
+        ],
+        "times": [
+          10.68735933303833,
+          10.690564155578613,
+          10.749373435974121,
+          10.828039646148682,
+          10.649435997009277
+        ],
+        "memories": [
+          290816,
+          -278528,
+          114688,
+          192512,
+          167936
+        ],
+        "throughputs": [
+          187.13696598722072,
+          187.08086597622147,
+          186.05735598567543,
+          184.70564066611635,
+          187.803372926197
+        ],
+        "per_image_times": [
+          0.005343679666519165,
+          0.005345282077789307,
+          0.0053746867179870605,
+          0.00541401982307434,
+          0.005324717998504639
+        ],
+        "precision": "INT16",
+        "accuracy": 48.8,
+        "accuracy_std": 0.0,
+        "time": 10.720954513549804,
+        "time_std": 0.06235698676949004,
+        "memory": 97484.8,
+        "memory_std": 196495.32771483395,
+        "throughput": 186.5568403082862,
+        "throughput_std": 1.0808715904522157,
+        "per_image_time": 0.005360477256774903,
+        "per_image_time_std": 3.11784933847448e-05
+      }
+    },
+    "int16_percentile": {
+      "gpu": {
+        "accuracies": [
+          49.4,
+          49.4,
+          49.4,
+          49.4,
+          49.4
+        ],
+        "times": [
+          5.211269378662109,
+          5.225186109542847,
+          5.255451917648315,
+          5.349966287612915,
+          5.446998596191406
+        ],
+        "memories": [
+          10094592,
+          0,
+          0,
+          0,
+          0
+        ],
+        "throughputs": [
+          383.78365320916504,
+          382.76148601623316,
+          380.5571873436434,
+          373.83413137213876,
+          367.1746861470497
+        ],
+        "per_image_times": [
+          0.002605634689331055,
+          0.0026125930547714234,
+          0.0026277259588241577,
+          0.0026749831438064573,
+          0.002723499298095703
+        ],
+        "precision": "INT16",
+        "accuracy": 49.4,
+        "accuracy_std": 0.0,
+        "time": 5.297774457931519,
+        "time_std": 0.0889215665652864,
+        "memory": 2018918.4,
+        "memory_std": 4037836.8,
+        "throughput": 377.62222881764603,
+        "throughput_std": 6.268810521072544,
+        "per_image_time": 0.0026488872289657595,
+        "per_image_time_std": 4.446078328264309e-05
+      },
+      "cpu": {
+        "accuracies": [
+          49.4,
+          49.4,
+          49.4,
+          49.4,
+          49.4
+        ],
+        "times": [
+          11.32900071144104,
+          11.41985559463501,
+          11.705256462097168,
+          11.506603479385376,
+          10.864615678787231
+        ],
+        "memories": [
+          -495616,
+          102400,
+          286720,
+          -270336,
+          24576
+        ],
+        "throughputs": [
+          176.53807700622886,
+          175.13356306708377,
+          170.86340709203657,
+          173.81323720619162,
+          184.08382395936263
+        ],
+        "per_image_times": [
+          0.00566450035572052,
+          0.005709927797317505,
+          0.005852628231048584,
+          0.005753301739692688,
+          0.005432307839393615
+        ],
+        "precision": "INT16",
+        "accuracy": 49.4,
+        "accuracy_std": 0.0,
+        "time": 11.365066385269165,
+        "time_std": 0.2794693318748879,
+        "memory": -70451.2,
+        "memory_std": 278279.7199297139,
+        "throughput": 176.08642166618068,
+        "throughput_std": 4.416279527518984,
+        "per_image_time": 0.005682533192634583,
+        "per_image_time_std": 0.00013973466593744416
+      }
+    }
+  },
+  "statistical": {
+    "fp32_gpu": {
+      "mean_accuracy": 48.8,
+      "std_accuracy": 0.0,
+      "mean_time": 5.130517387390137,
+      "std_time": 0.08736067400279252,
+      "mean_memory": 3722854.4,
+      "std_memory": 7445708.800000001,
+      "precision": "FP32",
+      "accuracy_ci_lower": NaN,
+      "accuracy_ci_upper": NaN,
+      "time_ci_lower": 5.00924132952922,
+      "time_ci_upper": 5.251793445251054
+    },
+    "fp32_cpu": {
+      "mean_accuracy": 48.8,
+      "std_accuracy": 0.0,
+      "mean_time": 10.468304300308228,
+      "std_time": 0.021548850405949248,
+      "mean_memory": 9725542.4,
+      "std_memory": 19386419.595857814,
+      "precision": "FP32",
+      "accuracy_ci_lower": NaN,
+      "accuracy_ci_upper": NaN,
+      "time_ci_lower": 10.43838970019211,
+      "time_ci_upper": 10.498218900424346
+    },
+    "int16_entropy_gpu": {
+      "mean_accuracy": 48.95,
+      "std_accuracy": 0.0,
+      "mean_time": 5.30489182472229,
+      "std_time": 0.015848642328525682,
+      "mean_memory": 2018918.4,
+      "std_memory": 4037836.8,
+      "precision": "INT16",
+      "accuracy_ci_lower": NaN,
+      "accuracy_ci_upper": NaN,
+      "time_ci_lower": 5.282890382013757,
+      "time_ci_upper": 5.326893267430823
+    },
+    "int16_entropy_cpu": {
+      "mean_accuracy": 48.95,
+      "std_accuracy": 0.0,
+      "mean_time": 10.723779773712158,
+      "std_time": 0.04222377000198846,
+      "mean_memory": -45875.2,
+      "std_memory": 179690.73104910002,
+      "precision": "INT16",
+      "accuracy_ci_lower": NaN,
+      "accuracy_ci_upper": NaN,
+      "time_ci_lower": 10.665163783939649,
+      "time_ci_upper": 10.782395763484667
+    },
+    "int16_mse_gpu": {
+      "mean_accuracy": 48.8,
+      "std_accuracy": 0.0,
+      "mean_time": 5.255614566802978,
+      "std_time": 0.017802197414087655,
+      "mean_memory": 2018918.4,
+      "std_memory": 4037836.8,
+      "precision": "INT16",
+      "accuracy_ci_lower": NaN,
+      "accuracy_ci_upper": NaN,
+      "time_ci_lower": 5.230901154866924,
+      "time_ci_upper": 5.280327978739033
+    },
+    "int16_mse_cpu": {
+      "mean_accuracy": 48.8,
+      "std_accuracy": 0.0,
+      "mean_time": 10.720954513549804,
+      "std_time": 0.06235698676949004,
+      "mean_memory": 97484.8,
+      "std_memory": 196495.32771483395,
+      "precision": "INT16",
+      "accuracy_ci_lower": NaN,
+      "accuracy_ci_upper": NaN,
+      "time_ci_lower": 10.634389138204288,
+      "time_ci_upper": 10.807519888895321
+    },
+    "int16_percentile_gpu": {
+      "mean_accuracy": 49.4,
+      "std_accuracy": 0.0,
+      "mean_time": 5.297774457931519,
+      "std_time": 0.0889215665652864,
+      "mean_memory": 2018918.4,
+      "std_memory": 4037836.8,
+      "precision": "INT16",
+      "accuracy_ci_lower": NaN,
+      "accuracy_ci_upper": NaN,
+      "time_ci_lower": 5.174331533813164,
+      "time_ci_upper": 5.421217382049874
+    },
+    "int16_percentile_cpu": {
+      "mean_accuracy": 49.4,
+      "std_accuracy": 0.0,
+      "mean_time": 11.365066385269165,
+      "std_time": 0.2794693318748879,
+      "mean_memory": -70451.2,
+      "std_memory": 278279.7199297139,
+      "precision": "INT16",
+      "accuracy_ci_lower": NaN,
+      "accuracy_ci_upper": NaN,
+      "time_ci_lower": 10.977100756000699,
+      "time_ci_upper": 11.75303201453763
+    }
+  },
+  "layer_analysis": {
+    "fp32": {
+      "total_layers": 88,
+      "total_parameters": 1519906,
+      "total_memory_mb": 5.8443145751953125,
+      "quantizable_layers": "54",
+      "quantized_layers": "0",
+      "quantization_coverage": 0.0,
+      "layer_type_distribution": {
+        "Conv2d": 52,
+        "BatchNorm2d": 34,
+        "Linear": 2
+      },
+      "memory_by_type": {
+        "BatchNorm2d": 97032,
+        "Conv2d": 3659584,
+        "Linear": 2371592
+      },
+      "precision_distribution": {
+        "FP32": 88
+      }
+    },
+    "int16": {
+      "total_layers": 34,
+      "total_parameters": 12112,
+      "total_memory_mb": 0.09253692626953125,
+      "quantizable_layers": "0",
+      "quantized_layers": "0",
+      "quantization_coverage": 0.0,
+      "layer_type_distribution": {
+        "BatchNorm2d": 34
+      },
+      "memory_by_type": {
+        "BatchNorm2d": 97032
+      },
+      "precision_distribution": {
+        "FP32": 34
+      }
+    }
+  },
+  "quantization_methods": [
+    {
+      "method": "entropy",
+      "quantized_layers": [
+        "features.0.0",
+        "features.1.block.0.0",
+        "features.1.block.1.fc1",
+        "features.1.block.1.fc2",
+        "features.1.block.2.0",
+        "features.2.block.0.0",
+        "features.2.block.1.0",
+        "features.2.block.2.0",
+        "features.3.block.0.0",
+        "features.3.block.1.0",
+        "features.3.block.2.0",
+        "features.4.block.0.0",
+        "features.4.block.1.0",
+        "features.4.block.2.fc1",
+        "features.4.block.2.fc2",
+        "features.4.block.3.0",
+        "features.5.block.0.0",
+        "features.5.block.1.0",
+        "features.5.block.2.fc1",
+        "features.5.block.2.fc2",
+        "features.5.block.3.0",
+        "features.6.block.0.0",
+        "features.6.block.1.0",
+        "features.6.block.2.fc1",
+        "features.6.block.2.fc2",
+        "features.6.block.3.0",
+        "features.7.block.0.0",
+        "features.7.block.1.0",
+        "features.7.block.2.fc1",
+        "features.7.block.2.fc2",
+        "features.7.block.3.0",
+        "features.8.block.0.0",
+        "features.8.block.1.0",
+        "features.8.block.2.fc1",
+        "features.8.block.2.fc2",
+        "features.8.block.3.0",
+        "features.9.block.0.0",
+        "features.9.block.1.0",
+        "features.9.block.2.fc1",
+        "features.9.block.2.fc2",
+        "features.9.block.3.0",
+        "features.10.block.0.0",
+        "features.10.block.1.0",
+        "features.10.block.2.fc1",
+        "features.10.block.2.fc2",
+        "features.10.block.3.0",
+        "features.11.block.0.0",
+        "features.11.block.1.0",
+        "features.11.block.2.fc1",
+        "features.11.block.2.fc2",
+        "features.11.block.3.0",
+        "features.12.0",
+        "classifier.0",
+        "classifier.3"
+      ],
+      "total_parameters": 1519906,
+      "quantized_parameters": 1507794,
+      "hooks_registered": 54,
+      "layer_details": {
+        "features.0.0": {
+          "type": "Conv2d",
+          "original_params": 432,
+          "shape": [
+            16,
+            3,
+            3,
+            3
+          ]
+        },
+        "features.1.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 144,
+          "shape": [
+            16,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.1.block.1.fc1": {
+          "type": "Conv2d",
+          "original_params": 136,
+          "shape": [
+            8,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.1.block.1.fc2": {
+          "type": "Conv2d",
+          "original_params": 144,
+          "shape": [
+            16,
+            8,
+            1,
+            1
+          ]
+        },
+        "features.1.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 256,
+          "shape": [
+            16,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.2.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 1152,
+          "shape": [
+            72,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.2.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 648,
+          "shape": [
+            72,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.2.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 1728,
+          "shape": [
+            24,
+            72,
+            1,
+            1
+          ]
+        },
+        "features.3.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 2112,
+          "shape": [
+            88,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.3.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 792,
+          "shape": [
+            88,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.3.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 2112,
+          "shape": [
+            24,
+            88,
+            1,
+            1
+          ]
+        },
+        "features.4.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 2304,
+          "shape": [
+            96,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.4.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 2400,
+          "shape": [
+            96,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.4.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 2328,
+          "shape": [
+            24,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.4.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 2400,
+          "shape": [
+            96,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.4.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 3840,
+          "shape": [
+            40,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.5.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            240,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.5.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 6000,
+          "shape": [
+            240,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.5.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 15424,
+          "shape": [
+            64,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.5.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 15600,
+          "shape": [
+            240,
+            64,
+            1,
+            1
+          ]
+        },
+        "features.5.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            40,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.6.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            240,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.6.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 6000,
+          "shape": [
+            240,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.6.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 15424,
+          "shape": [
+            64,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.6.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 15600,
+          "shape": [
+            240,
+            64,
+            1,
+            1
+          ]
+        },
+        "features.6.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            40,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.7.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 4800,
+          "shape": [
+            120,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.7.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 3000,
+          "shape": [
+            120,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.7.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 3872,
+          "shape": [
+            32,
+            120,
+            1,
+            1
+          ]
+        },
+        "features.7.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 3960,
+          "shape": [
+            120,
+            32,
+            1,
+            1
+          ]
+        },
+        "features.7.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 5760,
+          "shape": [
+            48,
+            120,
+            1,
+            1
+          ]
+        },
+        "features.8.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 6912,
+          "shape": [
+            144,
+            48,
+            1,
+            1
+          ]
+        },
+        "features.8.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 3600,
+          "shape": [
+            144,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.8.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 5800,
+          "shape": [
+            40,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.8.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 5904,
+          "shape": [
+            144,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.8.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 6912,
+          "shape": [
+            48,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.9.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 13824,
+          "shape": [
+            288,
+            48,
+            1,
+            1
+          ]
+        },
+        "features.9.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 7200,
+          "shape": [
+            288,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.9.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 20808,
+          "shape": [
+            72,
+            288,
+            1,
+            1
+          ]
+        },
+        "features.9.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 21024,
+          "shape": [
+            288,
+            72,
+            1,
+            1
+          ]
+        },
+        "features.9.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 27648,
+          "shape": [
+            96,
+            288,
+            1,
+            1
+          ]
+        },
+        "features.10.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.10.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 14400,
+          "shape": [
+            576,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.10.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 83088,
+          "shape": [
+            144,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.10.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 83520,
+          "shape": [
+            576,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.10.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            96,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.11.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.11.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 14400,
+          "shape": [
+            576,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.11.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 83088,
+          "shape": [
+            144,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.11.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 83520,
+          "shape": [
+            576,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.11.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            96,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.12.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "classifier.0": {
+          "type": "Linear",
+          "original_params": 590848,
+          "shape": [
+            1024,
+            576
+          ]
+        },
+        "classifier.3": {
+          "type": "Linear",
+          "original_params": 2050,
+          "shape": [
+            2,
+            1024
+          ]
+        }
+      },
+      "estimated_memory_reduction": 0.5039844569335209
+    },
+    {
+      "method": "mse",
+      "quantized_layers": [
+        "features.0.0",
+        "features.1.block.0.0",
+        "features.1.block.1.fc1",
+        "features.1.block.1.fc2",
+        "features.1.block.2.0",
+        "features.2.block.0.0",
+        "features.2.block.1.0",
+        "features.2.block.2.0",
+        "features.3.block.0.0",
+        "features.3.block.1.0",
+        "features.3.block.2.0",
+        "features.4.block.0.0",
+        "features.4.block.1.0",
+        "features.4.block.2.fc1",
+        "features.4.block.2.fc2",
+        "features.4.block.3.0",
+        "features.5.block.0.0",
+        "features.5.block.1.0",
+        "features.5.block.2.fc1",
+        "features.5.block.2.fc2",
+        "features.5.block.3.0",
+        "features.6.block.0.0",
+        "features.6.block.1.0",
+        "features.6.block.2.fc1",
+        "features.6.block.2.fc2",
+        "features.6.block.3.0",
+        "features.7.block.0.0",
+        "features.7.block.1.0",
+        "features.7.block.2.fc1",
+        "features.7.block.2.fc2",
+        "features.7.block.3.0",
+        "features.8.block.0.0",
+        "features.8.block.1.0",
+        "features.8.block.2.fc1",
+        "features.8.block.2.fc2",
+        "features.8.block.3.0",
+        "features.9.block.0.0",
+        "features.9.block.1.0",
+        "features.9.block.2.fc1",
+        "features.9.block.2.fc2",
+        "features.9.block.3.0",
+        "features.10.block.0.0",
+        "features.10.block.1.0",
+        "features.10.block.2.fc1",
+        "features.10.block.2.fc2",
+        "features.10.block.3.0",
+        "features.11.block.0.0",
+        "features.11.block.1.0",
+        "features.11.block.2.fc1",
+        "features.11.block.2.fc2",
+        "features.11.block.3.0",
+        "features.12.0",
+        "classifier.0",
+        "classifier.3"
+      ],
+      "total_parameters": 1519906,
+      "quantized_parameters": 1507794,
+      "hooks_registered": 54,
+      "layer_details": {
+        "features.0.0": {
+          "type": "Conv2d",
+          "original_params": 432,
+          "shape": [
+            16,
+            3,
+            3,
+            3
+          ]
+        },
+        "features.1.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 144,
+          "shape": [
+            16,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.1.block.1.fc1": {
+          "type": "Conv2d",
+          "original_params": 136,
+          "shape": [
+            8,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.1.block.1.fc2": {
+          "type": "Conv2d",
+          "original_params": 144,
+          "shape": [
+            16,
+            8,
+            1,
+            1
+          ]
+        },
+        "features.1.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 256,
+          "shape": [
+            16,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.2.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 1152,
+          "shape": [
+            72,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.2.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 648,
+          "shape": [
+            72,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.2.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 1728,
+          "shape": [
+            24,
+            72,
+            1,
+            1
+          ]
+        },
+        "features.3.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 2112,
+          "shape": [
+            88,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.3.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 792,
+          "shape": [
+            88,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.3.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 2112,
+          "shape": [
+            24,
+            88,
+            1,
+            1
+          ]
+        },
+        "features.4.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 2304,
+          "shape": [
+            96,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.4.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 2400,
+          "shape": [
+            96,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.4.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 2328,
+          "shape": [
+            24,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.4.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 2400,
+          "shape": [
+            96,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.4.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 3840,
+          "shape": [
+            40,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.5.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            240,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.5.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 6000,
+          "shape": [
+            240,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.5.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 15424,
+          "shape": [
+            64,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.5.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 15600,
+          "shape": [
+            240,
+            64,
+            1,
+            1
+          ]
+        },
+        "features.5.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            40,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.6.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            240,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.6.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 6000,
+          "shape": [
+            240,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.6.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 15424,
+          "shape": [
+            64,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.6.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 15600,
+          "shape": [
+            240,
+            64,
+            1,
+            1
+          ]
+        },
+        "features.6.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            40,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.7.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 4800,
+          "shape": [
+            120,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.7.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 3000,
+          "shape": [
+            120,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.7.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 3872,
+          "shape": [
+            32,
+            120,
+            1,
+            1
+          ]
+        },
+        "features.7.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 3960,
+          "shape": [
+            120,
+            32,
+            1,
+            1
+          ]
+        },
+        "features.7.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 5760,
+          "shape": [
+            48,
+            120,
+            1,
+            1
+          ]
+        },
+        "features.8.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 6912,
+          "shape": [
+            144,
+            48,
+            1,
+            1
+          ]
+        },
+        "features.8.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 3600,
+          "shape": [
+            144,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.8.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 5800,
+          "shape": [
+            40,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.8.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 5904,
+          "shape": [
+            144,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.8.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 6912,
+          "shape": [
+            48,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.9.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 13824,
+          "shape": [
+            288,
+            48,
+            1,
+            1
+          ]
+        },
+        "features.9.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 7200,
+          "shape": [
+            288,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.9.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 20808,
+          "shape": [
+            72,
+            288,
+            1,
+            1
+          ]
+        },
+        "features.9.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 21024,
+          "shape": [
+            288,
+            72,
+            1,
+            1
+          ]
+        },
+        "features.9.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 27648,
+          "shape": [
+            96,
+            288,
+            1,
+            1
+          ]
+        },
+        "features.10.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.10.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 14400,
+          "shape": [
+            576,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.10.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 83088,
+          "shape": [
+            144,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.10.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 83520,
+          "shape": [
+            576,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.10.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            96,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.11.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.11.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 14400,
+          "shape": [
+            576,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.11.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 83088,
+          "shape": [
+            144,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.11.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 83520,
+          "shape": [
+            576,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.11.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            96,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.12.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "classifier.0": {
+          "type": "Linear",
+          "original_params": 590848,
+          "shape": [
+            1024,
+            576
+          ]
+        },
+        "classifier.3": {
+          "type": "Linear",
+          "original_params": 2050,
+          "shape": [
+            2,
+            1024
+          ]
+        }
+      },
+      "estimated_memory_reduction": 0.5039844569335209
+    },
+    {
+      "method": "percentile",
+      "quantized_layers": [
+        "features.0.0",
+        "features.1.block.0.0",
+        "features.1.block.1.fc1",
+        "features.1.block.1.fc2",
+        "features.1.block.2.0",
+        "features.2.block.0.0",
+        "features.2.block.1.0",
+        "features.2.block.2.0",
+        "features.3.block.0.0",
+        "features.3.block.1.0",
+        "features.3.block.2.0",
+        "features.4.block.0.0",
+        "features.4.block.1.0",
+        "features.4.block.2.fc1",
+        "features.4.block.2.fc2",
+        "features.4.block.3.0",
+        "features.5.block.0.0",
+        "features.5.block.1.0",
+        "features.5.block.2.fc1",
+        "features.5.block.2.fc2",
+        "features.5.block.3.0",
+        "features.6.block.0.0",
+        "features.6.block.1.0",
+        "features.6.block.2.fc1",
+        "features.6.block.2.fc2",
+        "features.6.block.3.0",
+        "features.7.block.0.0",
+        "features.7.block.1.0",
+        "features.7.block.2.fc1",
+        "features.7.block.2.fc2",
+        "features.7.block.3.0",
+        "features.8.block.0.0",
+        "features.8.block.1.0",
+        "features.8.block.2.fc1",
+        "features.8.block.2.fc2",
+        "features.8.block.3.0",
+        "features.9.block.0.0",
+        "features.9.block.1.0",
+        "features.9.block.2.fc1",
+        "features.9.block.2.fc2",
+        "features.9.block.3.0",
+        "features.10.block.0.0",
+        "features.10.block.1.0",
+        "features.10.block.2.fc1",
+        "features.10.block.2.fc2",
+        "features.10.block.3.0",
+        "features.11.block.0.0",
+        "features.11.block.1.0",
+        "features.11.block.2.fc1",
+        "features.11.block.2.fc2",
+        "features.11.block.3.0",
+        "features.12.0",
+        "classifier.0",
+        "classifier.3"
+      ],
+      "total_parameters": 1519906,
+      "quantized_parameters": 1507794,
+      "hooks_registered": 54,
+      "layer_details": {
+        "features.0.0": {
+          "type": "Conv2d",
+          "original_params": 432,
+          "shape": [
+            16,
+            3,
+            3,
+            3
+          ]
+        },
+        "features.1.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 144,
+          "shape": [
+            16,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.1.block.1.fc1": {
+          "type": "Conv2d",
+          "original_params": 136,
+          "shape": [
+            8,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.1.block.1.fc2": {
+          "type": "Conv2d",
+          "original_params": 144,
+          "shape": [
+            16,
+            8,
+            1,
+            1
+          ]
+        },
+        "features.1.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 256,
+          "shape": [
+            16,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.2.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 1152,
+          "shape": [
+            72,
+            16,
+            1,
+            1
+          ]
+        },
+        "features.2.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 648,
+          "shape": [
+            72,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.2.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 1728,
+          "shape": [
+            24,
+            72,
+            1,
+            1
+          ]
+        },
+        "features.3.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 2112,
+          "shape": [
+            88,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.3.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 792,
+          "shape": [
+            88,
+            1,
+            3,
+            3
+          ]
+        },
+        "features.3.block.2.0": {
+          "type": "Conv2d",
+          "original_params": 2112,
+          "shape": [
+            24,
+            88,
+            1,
+            1
+          ]
+        },
+        "features.4.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 2304,
+          "shape": [
+            96,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.4.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 2400,
+          "shape": [
+            96,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.4.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 2328,
+          "shape": [
+            24,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.4.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 2400,
+          "shape": [
+            96,
+            24,
+            1,
+            1
+          ]
+        },
+        "features.4.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 3840,
+          "shape": [
+            40,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.5.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            240,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.5.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 6000,
+          "shape": [
+            240,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.5.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 15424,
+          "shape": [
+            64,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.5.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 15600,
+          "shape": [
+            240,
+            64,
+            1,
+            1
+          ]
+        },
+        "features.5.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            40,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.6.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            240,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.6.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 6000,
+          "shape": [
+            240,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.6.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 15424,
+          "shape": [
+            64,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.6.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 15600,
+          "shape": [
+            240,
+            64,
+            1,
+            1
+          ]
+        },
+        "features.6.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 9600,
+          "shape": [
+            40,
+            240,
+            1,
+            1
+          ]
+        },
+        "features.7.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 4800,
+          "shape": [
+            120,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.7.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 3000,
+          "shape": [
+            120,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.7.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 3872,
+          "shape": [
+            32,
+            120,
+            1,
+            1
+          ]
+        },
+        "features.7.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 3960,
+          "shape": [
+            120,
+            32,
+            1,
+            1
+          ]
+        },
+        "features.7.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 5760,
+          "shape": [
+            48,
+            120,
+            1,
+            1
+          ]
+        },
+        "features.8.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 6912,
+          "shape": [
+            144,
+            48,
+            1,
+            1
+          ]
+        },
+        "features.8.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 3600,
+          "shape": [
+            144,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.8.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 5800,
+          "shape": [
+            40,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.8.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 5904,
+          "shape": [
+            144,
+            40,
+            1,
+            1
+          ]
+        },
+        "features.8.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 6912,
+          "shape": [
+            48,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.9.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 13824,
+          "shape": [
+            288,
+            48,
+            1,
+            1
+          ]
+        },
+        "features.9.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 7200,
+          "shape": [
+            288,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.9.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 20808,
+          "shape": [
+            72,
+            288,
+            1,
+            1
+          ]
+        },
+        "features.9.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 21024,
+          "shape": [
+            288,
+            72,
+            1,
+            1
+          ]
+        },
+        "features.9.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 27648,
+          "shape": [
+            96,
+            288,
+            1,
+            1
+          ]
+        },
+        "features.10.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.10.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 14400,
+          "shape": [
+            576,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.10.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 83088,
+          "shape": [
+            144,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.10.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 83520,
+          "shape": [
+            576,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.10.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            96,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.11.block.0.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "features.11.block.1.0": {
+          "type": "Conv2d",
+          "original_params": 14400,
+          "shape": [
+            576,
+            1,
+            5,
+            5
+          ]
+        },
+        "features.11.block.2.fc1": {
+          "type": "Conv2d",
+          "original_params": 83088,
+          "shape": [
+            144,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.11.block.2.fc2": {
+          "type": "Conv2d",
+          "original_params": 83520,
+          "shape": [
+            576,
+            144,
+            1,
+            1
+          ]
+        },
+        "features.11.block.3.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            96,
+            576,
+            1,
+            1
+          ]
+        },
+        "features.12.0": {
+          "type": "Conv2d",
+          "original_params": 55296,
+          "shape": [
+            576,
+            96,
+            1,
+            1
+          ]
+        },
+        "classifier.0": {
+          "type": "Linear",
+          "original_params": 590848,
+          "shape": [
+            1024,
+            576
+          ]
+        },
+        "classifier.3": {
+          "type": "Linear",
+          "original_params": 2050,
+          "shape": [
+            2,
+            1024
+          ]
+        }
+      },
+      "estimated_memory_reduction": 0.5039844569335209
+    }
+  ],
+  "matrices": {
+    "accuracy": {
+      "GPU": {
+        "FP32": 48.8,
+        "INT16_Entropy": 48.95,
+        "INT16_MSE": 48.8,
+        "INT16_Percentile": 49.4
+      },
+      "CPU": {
+        "FP32": 48.8,
+        "INT16_Entropy": 48.95,
+        "INT16_MSE": 48.8,
+        "INT16_Percentile": 49.4
+      }
+    },
+    "time": {
+      "GPU": {
+        "FP32": 5.130517387390137,
+        "INT16_Entropy": 5.30489182472229,
+        "INT16_MSE": 5.255614566802978,
+        "INT16_Percentile": 5.297774457931519
+      },
+      "CPU": {
+        "FP32": 10.468304300308228,
+        "INT16_Entropy": 10.723779773712158,
+        "INT16_MSE": 10.720954513549804,
+        "INT16_Percentile": 11.365066385269165
+      }
+    },
+    "memory": {
+      "GPU": {
+        "FP32": 3.7228544,
+        "INT16_Entropy": 2.0189184,
+        "INT16_MSE": 2.0189184,
+        "INT16_Percentile": 2.0189184
+      },
+      "CPU": {
+        "FP32": 9.7255424,
+        "INT16_Entropy": -0.0458752,
+        "INT16_MSE": 0.0974848,
+        "INT16_Percentile": -0.07045119999999999
+      }
+    },
+    "throughput": {
+      "GPU": {
+        "FP32": 389.9350355445313,
+        "INT16_Entropy": 377.0138783047869,
+        "INT16_MSE": 380.549763192058,
+        "INT16_Percentile": 377.62222881764603
+      },
+      "CPU": {
+        "FP32": 191.0537200297951,
+        "INT16_Entropy": 186.50428772411072,
+        "INT16_MSE": 186.5568403082862,
+        "INT16_Percentile": 176.08642166618068
+      }
+    }
+  },
+  "system_info": {
+    "device": "cuda",
+    "cuda_available": true,
+    "timestamp": "20250819_171603"
+  }
+}

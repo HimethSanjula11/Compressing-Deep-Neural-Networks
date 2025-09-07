@@ -1,0 +1,124 @@
+himeth-sanjula@himeth-sanjula-IdeaPad-Gaming-3-15ARH05:~/dissertation_project/DNN$ source /home/himeth-sanjula/dissertation_project/DNN/dnn/bin/activate
+(dnn) himeth-sanjula@himeth-sanjula-IdeaPad-Gaming-3-15ARH05:~/dissertation_project/DNN$ /home/himeth-sanjula/dissertation_project/DNN/dnn/bin/python /home/himeth-sanjula/dissertation_project/DNN/Int16/PTQ/QAT/train_resnet.py
+PyTorch: 2.8.0+cu128
+Using device: cuda
+Loading datasets...
+Training samples:   8000
+Validation samples: 2000
+============================================================
+ResNet18 INT8 QAT (stable: per-tensor Linear + qnnpack)
+============================================================
+
+Step 1: Building QAT-ready ResNet18...
+Trainable parameters: 11,177,538
+
+Step 2: Fusing modules (eval-only) ...
+Fused stem: conv1+bn1+relu
+Fusion complete.
+
+Step 3: Preparing QAT (INT8)...
+Applied per-tensor weight qconfig to 1 Linear layer(s).
+/home/himeth-sanjula/dissertation_project/DNN/Int16/PTQ/QAT/train_resnet.py:408: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  prepare_qat(model, inplace=True)
+QAT graph prepared.
+
+Step 4: QAT training...
+  Epoch 1/10 Batch 0/250 Loss 0.6847
+  Epoch 1/10 Batch 50/250 Loss 0.0414
+  Epoch 1/10 Batch 100/250 Loss 0.0699
+  Epoch 1/10 Batch 150/250 Loss 0.1052
+  Epoch 1/10 Batch 200/250 Loss 0.0635
+Epoch 1/10: Train Acc 95.36% Loss 0.1136 | Val Acc 97.60% Loss 0.0620
+  Epoch 2/10 Batch 0/250 Loss 0.0544
+  Epoch 2/10 Batch 50/250 Loss 0.0930
+  Epoch 2/10 Batch 100/250 Loss 0.0664
+  Epoch 2/10 Batch 150/250 Loss 0.0110
+  Epoch 2/10 Batch 200/250 Loss 0.0150
+Epoch 2/10: Train Acc 97.96% Loss 0.0496 | Val Acc 96.35% Loss 0.0858
+  Epoch 3/10 Batch 0/250 Loss 0.1242
+  Epoch 3/10 Batch 50/250 Loss 0.0264
+  Epoch 3/10 Batch 100/250 Loss 0.0817
+  Epoch 3/10 Batch 150/250 Loss 0.0961
+  Epoch 3/10 Batch 200/250 Loss 0.0004
+Epoch 3/10: Train Acc 98.64% Loss 0.0355 | Val Acc 97.25% Loss 0.0696
+  Epoch 4/10 Batch 0/250 Loss 0.0036
+  Epoch 4/10 Batch 50/250 Loss 0.0025
+  Epoch 4/10 Batch 100/250 Loss 0.0050
+  Epoch 4/10 Batch 150/250 Loss 0.0021
+  Epoch 4/10 Batch 200/250 Loss 0.0037
+Epoch 4/10: Train Acc 98.95% Loss 0.0278 | Val Acc 95.70% Loss 0.1067
+  Epoch 5/10 Batch 0/250 Loss 0.0326
+  Epoch 5/10 Batch 50/250 Loss 0.0120
+  Epoch 5/10 Batch 100/250 Loss 0.0026
+  Epoch 5/10 Batch 150/250 Loss 0.0008
+  Epoch 5/10 Batch 200/250 Loss 0.0054
+Epoch 5/10: Train Acc 99.19% Loss 0.0224 | Val Acc 97.45% Loss 0.0711
+  Epoch 6/10 Batch 0/250 Loss 0.0231
+  Epoch 6/10 Batch 50/250 Loss 0.0008
+  Epoch 6/10 Batch 100/250 Loss 0.0001
+  Epoch 6/10 Batch 150/250 Loss 0.0060
+  Epoch 6/10 Batch 200/250 Loss 0.0011
+Epoch 6/10: Train Acc 99.86% Loss 0.0046 | Val Acc 97.55% Loss 0.1054
+  Epoch 7/10 Batch 0/250 Loss 0.0001
+  Epoch 7/10 Batch 50/250 Loss 0.0008
+  Epoch 7/10 Batch 100/250 Loss 0.0019
+  Epoch 7/10 Batch 150/250 Loss 0.0007
+  Epoch 7/10 Batch 200/250 Loss 0.0000
+Epoch 7/10: Train Acc 99.91% Loss 0.0021 | Val Acc 98.75% Loss 0.0672
+  Epoch 8/10 Batch 0/250 Loss 0.0022
+  Epoch 8/10 Batch 50/250 Loss 0.0011
+  Epoch 8/10 Batch 100/250 Loss 0.0006
+  Epoch 8/10 Batch 150/250 Loss 0.0002
+  Epoch 8/10 Batch 200/250 Loss 0.0000
+Epoch 8/10: Train Acc 99.95% Loss 0.0013 | Val Acc 98.35% Loss 0.0713
+  Epoch 9/10 Batch 0/250 Loss 0.0001
+  Epoch 9/10 Batch 50/250 Loss 0.0001
+  Epoch 9/10 Batch 100/250 Loss 0.0001
+  Epoch 9/10 Batch 150/250 Loss 0.0000
+  Epoch 9/10 Batch 200/250 Loss 0.0000
+Epoch 9/10: Train Acc 100.00% Loss 0.0001 | Val Acc 98.40% Loss 0.0734
+  Epoch 10/10 Batch 0/250 Loss 0.0000
+  Epoch 10/10 Batch 50/250 Loss 0.0000
+  Epoch 10/10 Batch 100/250 Loss 0.0000
+  Epoch 10/10 Batch 150/250 Loss 0.0000
+  Epoch 10/10 Batch 200/250 Loss 0.0000
+Epoch 10/10: Train Acc 100.00% Loss 0.0000 | Val Acc 98.45% Loss 0.0741
+Loaded best model (Val Acc 98.75%)
+Saved QAT model state: ./resnet18_qat_int8_state_stable.pth
+
+Step 5: Converting to INT8...
+Converting QAT model to INT8 on CPU with qnnpack...
+  quantized.engine = 'qnnpack'
+/home/himeth-sanjula/dissertation_project/DNN/Int16/PTQ/QAT/train_resnet.py:378: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  int8_model = convert(qat_cpu, inplace=False)
+✓ Conversion successful.
+Saved INT8 model state: ./resnet18_int8_quantized_stable.pth
+
+Step 6: Evaluating ...
+[QAT (FP32 fake-quant)] Acc 98.75% | Total 25.104s | 12.55 ms/img on cuda (engine=qnnpack)
+[INT8 Quantized (qnnpack)] Acc 98.65% | Total 215.741s | 107.87 ms/img on cpu (engine=qnnpack)
+
+Step 7: Saving training curves...
+Saved: ./resnet18_qat_training_curves_stable.png
+
+============================================================
+INT8 QAT SUMMARY (stable settings)
+============================================================
+Best Val Acc during QAT: 98.75%
+QAT Inference:  12.55 ms/img
+INT8 Inference: 107.87 ms/img (CPU, qnnpack)
+Speedup (QAT->INT8): 0.12x
+Acc (QAT):  98.75% | Acc (INT8): 98.65%
+QAT state: ./resnet18_qat_int8_state_stable.pth
+INT8 state: ./resnet18_int8_quantized_stable.pth
+(dnn) himeth-sanjula@himeth-sanjula-IdeaPad-Gaming-3-15ARH05:~/dissertation_project/DNN$ 

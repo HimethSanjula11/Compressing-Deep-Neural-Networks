@@ -1,0 +1,787 @@
+{
+  "system_info": {
+    "pytorch_version": "2.8.0+cu128",
+    "cuda_available": true,
+    "device_name": "cuda",
+    "python_version": "3.12.3",
+    "timestamp": "2025-08-19 22:41:23",
+    "gpu_name": "NVIDIA GeForce GTX 1650 Ti",
+    "cuda_version": "12.8",
+    "gpu_memory_total": 3896180736,
+    "gpu_compute_capability": "7.5",
+    "fp16_tensor_cores": true,
+    "cpu_count": 16,
+    "memory_total_gb": 14.994270324707031
+  },
+  "model_analysis": {
+    "baseline": {
+      "architecture": {},
+      "parameters": {},
+      "memory": {},
+      "computational_complexity": {},
+      "total_parameters": 57012034,
+      "trainable_parameters": 57012034,
+      "parameter_memory_mb": 217.48365020751953,
+      "estimated_flops": 710100672,
+      "layer_details": {
+        "alexnet.features.0": {
+          "type": "Conv2d",
+          "parameters": 23296,
+          "trainable_parameters": 23296,
+          "weight_shape": [
+            64,
+            3,
+            11,
+            11
+          ],
+          "weight_memory_mb": 0.088623046875,
+          "bias_shape": [
+            64
+          ],
+          "bias_memory_mb": 0.000244140625
+        },
+        "alexnet.features.1": {
+          "type": "ReLU",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.features.2": {
+          "type": "MaxPool2d",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.features.3": {
+          "type": "Conv2d",
+          "parameters": 307392,
+          "trainable_parameters": 307392,
+          "weight_shape": [
+            192,
+            64,
+            5,
+            5
+          ],
+          "weight_memory_mb": 1.171875,
+          "bias_shape": [
+            192
+          ],
+          "bias_memory_mb": 0.000732421875
+        },
+        "alexnet.features.4": {
+          "type": "ReLU",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.features.5": {
+          "type": "MaxPool2d",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.features.6": {
+          "type": "Conv2d",
+          "parameters": 663936,
+          "trainable_parameters": 663936,
+          "weight_shape": [
+            384,
+            192,
+            3,
+            3
+          ],
+          "weight_memory_mb": 2.53125,
+          "bias_shape": [
+            384
+          ],
+          "bias_memory_mb": 0.00146484375
+        },
+        "alexnet.features.7": {
+          "type": "ReLU",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.features.8": {
+          "type": "Conv2d",
+          "parameters": 884992,
+          "trainable_parameters": 884992,
+          "weight_shape": [
+            256,
+            384,
+            3,
+            3
+          ],
+          "weight_memory_mb": 3.375,
+          "bias_shape": [
+            256
+          ],
+          "bias_memory_mb": 0.0009765625
+        },
+        "alexnet.features.9": {
+          "type": "ReLU",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.features.10": {
+          "type": "Conv2d",
+          "parameters": 590080,
+          "trainable_parameters": 590080,
+          "weight_shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "weight_memory_mb": 2.25,
+          "bias_shape": [
+            256
+          ],
+          "bias_memory_mb": 0.0009765625
+        },
+        "alexnet.features.11": {
+          "type": "ReLU",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.features.12": {
+          "type": "MaxPool2d",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.avgpool": {
+          "type": "AdaptiveAvgPool2d",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.classifier.0": {
+          "type": "Dropout",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.classifier.1": {
+          "type": "Linear",
+          "parameters": 37752832,
+          "trainable_parameters": 37752832,
+          "weight_shape": [
+            4096,
+            9216
+          ],
+          "weight_memory_mb": 144.0,
+          "bias_shape": [
+            4096
+          ],
+          "bias_memory_mb": 0.015625
+        },
+        "alexnet.classifier.2": {
+          "type": "ReLU",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.classifier.3": {
+          "type": "Dropout",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.classifier.4": {
+          "type": "Linear",
+          "parameters": 16781312,
+          "trainable_parameters": 16781312,
+          "weight_shape": [
+            4096,
+            4096
+          ],
+          "weight_memory_mb": 64.0,
+          "bias_shape": [
+            4096
+          ],
+          "bias_memory_mb": 0.015625
+        },
+        "alexnet.classifier.5": {
+          "type": "ReLU",
+          "parameters": 0,
+          "trainable_parameters": 0
+        },
+        "alexnet.classifier.6": {
+          "type": "Linear",
+          "parameters": 8194,
+          "trainable_parameters": 8194,
+          "weight_shape": [
+            2,
+            4096
+          ],
+          "weight_memory_mb": 0.03125,
+          "bias_shape": [
+            2
+          ],
+          "bias_memory_mb": 7.62939453125e-06
+        }
+      }
+    },
+    "fp16": {
+      "precision_format": "FP16",
+      "memory_reduction": 0.5,
+      "parameter_memory_mb": 108.74182510375977,
+      "is_half_precision": true,
+      "hardware_optimized": true
+    }
+  },
+  "training_metrics": {
+    "baseline": {
+      "history": {
+        "train_loss": [
+          0.15978534986730664,
+          0.10329861781559885,
+          0.0797507086279802,
+          0.07543395414366387,
+          0.06273377850739052,
+          0.050765367237981994,
+          0.04321971247778606,
+          0.028309737964518716,
+          0.023611896410184272,
+          0.017176435356268484
+        ],
+        "train_acc": [
+          93.453125,
+          95.96875,
+          96.6875,
+          97.296875,
+          97.640625,
+          98.265625,
+          98.34375,
+          99.109375,
+          99.046875,
+          99.40625
+        ],
+        "val_loss": [
+          0.12206135518848896,
+          0.13875762578099965,
+          0.10815912988036872,
+          0.11066564528271555,
+          0.14345833146944642,
+          0.13761360111646354,
+          0.11642476838082075,
+          0.10345759364310653,
+          0.10160317013273015,
+          0.10884780133375899
+        ],
+        "val_acc": [
+          95.1875,
+          94.75,
+          95.25,
+          96.0,
+          95.125,
+          95.75,
+          95.25,
+          96.75,
+          96.75,
+          96.9375
+        ],
+        "learning_rates": [
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          5e-05,
+          5e-05,
+          5e-05
+        ]
+      },
+      "best_validation_accuracy": 96.9375,
+      "final_learning_rate": 5e-05,
+      "epochs_trained": 10
+    },
+    "mixed_precision": {
+      "history": {
+        "train_loss": [
+          0.05104604890570044,
+          0.042668151352554556,
+          0.05051127700135112,
+          0.03397278621792793,
+          0.036845269668847325,
+          0.037205164693295954,
+          0.04080809399485588,
+          0.036059254482388496,
+          0.03529326258227229,
+          0.02960249088704586
+        ],
+        "train_acc": [
+          98.34375,
+          98.5625,
+          98.28125,
+          98.765625,
+          98.6875,
+          98.6875,
+          98.5,
+          98.765625,
+          98.78125,
+          99.0
+        ],
+        "val_loss": [
+          0.12598836176097394,
+          0.17641057066619395,
+          0.1949283380061388,
+          0.12115422219038009,
+          0.169925419613719,
+          0.20450262777507305,
+          0.10567221015691758,
+          0.18224617712199687,
+          0.12719231389462948,
+          0.21307771883904933
+        ],
+        "val_acc": [
+          96.1875,
+          95.1875,
+          95.0,
+          96.0,
+          94.0,
+          95.875,
+          96.0,
+          96.375,
+          96.0625,
+          95.3125
+        ],
+        "learning_rates": [
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001,
+          0.0001
+        ],
+        "scale_values": [
+          65536.0,
+          65536.0,
+          65536.0,
+          65536.0,
+          65536.0,
+          65536.0,
+          65536.0,
+          65536.0,
+          65536.0,
+          131072.0
+        ]
+      },
+      "best_validation_accuracy": 96.375,
+      "final_learning_rate": 0.0001,
+      "epochs_trained": 10,
+      "scaler_used": true
+    }
+  },
+  "precision_metrics": {
+    "fp16_config": {
+      "format": "FP16",
+      "bytes_per_parameter": 2,
+      "theoretical_speedup": "1.5-2x",
+      "memory_efficiency": "50% reduction",
+      "hardware_support": "Tensor Cores"
+    }
+  },
+  "performance_analysis": {
+    "individual_results": {
+      "baseline_fp32": {
+        "accuracy": {
+          "mean": 97.4,
+          "std": 0.0,
+          "min": 97.4,
+          "max": 97.4,
+          "confidence_interval": [
+            NaN,
+            NaN
+          ],
+          "coefficient_of_variation": 0.0,
+          "raw_values": [
+            97.4,
+            97.4,
+            97.4,
+            97.4,
+            97.4,
+            97.4,
+            97.4,
+            97.4,
+            97.4,
+            97.4
+          ]
+        },
+        "avg_inference_time_ms": {
+          "mean": 0.42314328371532384,
+          "std": 0.004057575769098426,
+          "min": 0.41613692329043434,
+          "max": 0.4316784796260652,
+          "confidence_interval": [
+            0.4200836590188471,
+            0.4262029084118006
+          ],
+          "coefficient_of_variation": 0.00958912955789279,
+          "raw_values": [
+            0.4316784796260652,
+            0.4233087575624859,
+            0.423847564629146,
+            0.4222222736903599,
+            0.42687155424602446,
+            0.42443923533908906,
+            0.41613692329043434,
+            0.4235077945012895,
+            0.41869933169985574,
+            0.4207209225684877
+          ]
+        },
+        "throughput_samples_per_sec": {
+          "mean": 2363.4823304644283,
+          "std": 22.59539743379079,
+          "min": 2316.5389223623897,
+          "max": 2403.0552061876765,
+          "confidence_interval": [
+            2346.4442170811517,
+            2380.520443847705
+          ],
+          "coefficient_of_variation": 0.009560214240886987,
+          "raw_values": [
+            2316.5389223623897,
+            2362.341865446492,
+            2359.338789347463,
+            2368.420763925302,
+            2342.625059114754,
+            2356.049857645911,
+            2403.0552061876765,
+            2361.2316301700444,
+            2388.3486891181597,
+            2376.87252132609
+          ]
+        },
+        "memory_used_mb": {
+          "mean": 127.158203125,
+          "std": 0.0,
+          "min": 127.158203125,
+          "max": 127.158203125,
+          "confidence_interval": [
+            NaN,
+            NaN
+          ],
+          "coefficient_of_variation": 0.0,
+          "raw_values": [
+            127.158203125,
+            127.158203125,
+            127.158203125,
+            127.158203125,
+            127.158203125,
+            127.158203125,
+            127.158203125,
+            127.158203125,
+            127.158203125,
+            127.158203125
+          ]
+        },
+        "classification_report": {
+          "0": {
+            "precision": 0.974,
+            "recall": 0.974,
+            "f1-score": 0.974,
+            "support": 1000.0
+          },
+          "1": {
+            "precision": 0.974,
+            "recall": 0.974,
+            "f1-score": 0.974,
+            "support": 1000.0
+          },
+          "accuracy": 0.974,
+          "macro avg": {
+            "precision": 0.974,
+            "recall": 0.974,
+            "f1-score": 0.974,
+            "support": 2000.0
+          },
+          "weighted avg": {
+            "precision": 0.974,
+            "recall": 0.974,
+            "f1-score": 0.974,
+            "support": 2000.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            974,
+            26
+          ],
+          [
+            26,
+            974
+          ]
+        ]
+      },
+      "mixed_precision": {
+        "accuracy": {
+          "mean": 95.75,
+          "std": 0.0,
+          "min": 95.75,
+          "max": 95.75,
+          "confidence_interval": [
+            NaN,
+            NaN
+          ],
+          "coefficient_of_variation": 0.0,
+          "raw_values": [
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75
+          ]
+        },
+        "avg_inference_time_ms": {
+          "mean": 2.7835496479556676,
+          "std": 0.0024915132882320956,
+          "min": 2.7808985776371427,
+          "max": 2.7894702932191273,
+          "confidence_interval": [
+            2.781670916411988,
+            2.785428379499347
+          ],
+          "coefficient_of_variation": 0.0008950849107584435,
+          "raw_values": [
+            2.7836583673007906,
+            2.782979891413734,
+            2.7821294608570284,
+            2.781732924400814,
+            2.7808985776371427,
+            2.7866151834291126,
+            2.783417110405271,
+            2.783243026998308,
+            2.781351643895346,
+            2.7894702932191273
+          ]
+        },
+        "throughput_samples_per_sec": {
+          "mean": 359.25380421922785,
+          "std": 0.3211949510034965,
+          "min": 358.4910018331731,
+          "max": 359.5959982293472,
+          "confidence_interval": [
+            359.0116063995449,
+            359.4960020389108
+          ],
+          "coefficient_of_variation": 0.0008940613773083203,
+          "raw_values": [
+            359.2394856160681,
+            359.3270663166765,
+            359.4369040224147,
+            359.4881418083658,
+            359.5959982293472,
+            358.85830449306405,
+            359.2706232428089,
+            359.29309453026355,
+            359.5374221000971,
+            358.4910018331731
+          ]
+        },
+        "memory_used_mb": {
+          "mean": 129.68994140625,
+          "std": 0.0,
+          "min": 129.68994140625,
+          "max": 129.68994140625,
+          "confidence_interval": [
+            NaN,
+            NaN
+          ],
+          "coefficient_of_variation": 0.0,
+          "raw_values": [
+            129.68994140625,
+            129.68994140625,
+            129.68994140625,
+            129.68994140625,
+            129.68994140625,
+            129.68994140625,
+            129.68994140625,
+            129.68994140625,
+            129.68994140625,
+            129.68994140625
+          ]
+        },
+        "classification_report": {
+          "0": {
+            "precision": 0.9810725552050473,
+            "recall": 0.933,
+            "f1-score": 0.9564325986673501,
+            "support": 1000.0
+          },
+          "1": {
+            "precision": 0.9361296472831268,
+            "recall": 0.982,
+            "f1-score": 0.9585163494387506,
+            "support": 1000.0
+          },
+          "accuracy": 0.9575,
+          "macro avg": {
+            "precision": 0.958601101244087,
+            "recall": 0.9575,
+            "f1-score": 0.9574744740530503,
+            "support": 2000.0
+          },
+          "weighted avg": {
+            "precision": 0.9586011012440869,
+            "recall": 0.9575,
+            "f1-score": 0.9574744740530503,
+            "support": 2000.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            933,
+            67
+          ],
+          [
+            18,
+            982
+          ]
+        ]
+      },
+      "fp16_direct": {
+        "accuracy": {
+          "mean": 95.75,
+          "std": 0.0,
+          "min": 95.75,
+          "max": 95.75,
+          "confidence_interval": [
+            NaN,
+            NaN
+          ],
+          "coefficient_of_variation": 0.0,
+          "raw_values": [
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75,
+            95.75
+          ]
+        },
+        "avg_inference_time_ms": {
+          "mean": 2.7150128450658584,
+          "std": 0.002566403689329044,
+          "min": 2.710452037198203,
+          "max": 2.7185496356752186,
+          "confidence_interval": [
+            2.7130776422364247,
+            2.716948047895292
+          ],
+          "coefficient_of_variation": 0.000945263921676507,
+          "raw_values": [
+            2.7185496356752186,
+            2.7151527622389415,
+            2.7144551277160645,
+            2.7175077370234897,
+            2.7129389936961825,
+            2.7159167424080866,
+            2.7115160510653538,
+            2.715789018169282,
+            2.710452037198203,
+            2.717850345467764
+          ]
+        },
+        "throughput_samples_per_sec": {
+          "mean": 368.3227118638086,
+          "std": 0.34828506287841443,
+          "min": 367.8432009764006,
+          "max": 368.94214923415547,
+          "confidence_interval": [
+            368.06008668058655,
+            368.58533704703063
+          ],
+          "coefficient_of_variation": 0.0009455975742467836,
+          "raw_values": [
+            367.8432009764006,
+            368.3034022643316,
+            368.39805889198743,
+            367.98423289690754,
+            368.6039392421326,
+            368.19979949508433,
+            368.7973742980796,
+            368.21711602402075,
+            368.94214923415547,
+            367.9378453149862
+          ]
+        },
+        "memory_used_mb": {
+          "mean": 55.43505859375,
+          "std": 0.0,
+          "min": 55.43505859375,
+          "max": 55.43505859375,
+          "confidence_interval": [
+            NaN,
+            NaN
+          ],
+          "coefficient_of_variation": 0.0,
+          "raw_values": [
+            55.43505859375,
+            55.43505859375,
+            55.43505859375,
+            55.43505859375,
+            55.43505859375,
+            55.43505859375,
+            55.43505859375,
+            55.43505859375,
+            55.43505859375,
+            55.43505859375
+          ]
+        },
+        "classification_report": {
+          "0": {
+            "precision": 0.9810725552050473,
+            "recall": 0.933,
+            "f1-score": 0.9564325986673501,
+            "support": 1000.0
+          },
+          "1": {
+            "precision": 0.9361296472831268,
+            "recall": 0.982,
+            "f1-score": 0.9585163494387506,
+            "support": 1000.0
+          },
+          "accuracy": 0.9575,
+          "macro avg": {
+            "precision": 0.958601101244087,
+            "recall": 0.9575,
+            "f1-score": 0.9574744740530503,
+            "support": 2000.0
+          },
+          "weighted avg": {
+            "precision": 0.9586011012440869,
+            "recall": 0.9575,
+            "f1-score": 0.9574744740530503,
+            "support": 2000.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            933,
+            67
+          ],
+          [
+            18,
+            982
+          ]
+        ]
+      }
+    },
+    "comparative_analysis": {
+      "mixed_precision": {
+        "accuracy": {
+          "baseline_mean": 97.4,
+          "model_mean": 95.75,
+          "absolute_improvement": -1.6500000000000057,
+          "relative_improvement_percent": -1.6940451745379934,
+          "t_statistic": Infinity,
+          "p_value": 0.0,
+          "is_statistically_significant": 

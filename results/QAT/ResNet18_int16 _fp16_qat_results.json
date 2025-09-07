@@ -1,0 +1,46 @@
+{
+  "experiment_config": {
+    "epochs": 20,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "img_size": 224,
+    "num_workers": 4,
+    "mixed_precision": true,
+    "save_checkpoints": true
+  },
+  "dataset_info": {
+    "classes": [
+      "cats",
+      "dogs"
+    ],
+    "num_classes": 2
+  },
+  "fp32_metrics": {
+    "accuracy": 98.35,
+    "loss": 0.12445362484455108,
+    "inference_time_ms": 1.3820947695007817,
+    "throughput_imgs_per_sec": 723.5393853354963,
+    "model_size_mb": 42.675697326660156,
+    "memory_usage_mb": 9.189453125,
+    "precision": "FP32",
+    "device": "cuda"
+  },
+  "fp16_metrics": {
+    "accuracy": 98.45,
+    "loss": 0.08904512405395508,
+    "inference_time_ms": 6.2363945919996695,
+    "throughput_imgs_per_sec": 160.34905829769744,
+    "model_size_mb": 42.675697326660156,
+    "memory_usage_mb": 9.189453125,
+    "precision": "FP16",
+    "device": "cuda"
+  },
+  "performance_analysis": {
+    "speedup_factor": 0.22161759476762355,
+    "throughput_improvement_percent": -77.83824052323764,
+    "memory_reduction_percent": 0.0,
+    "model_size_reduction_percent": 0.0,
+    "accuracy_delta_percent": 0.10000000000000853
+  }
+}

@@ -1,0 +1,32 @@
+AlexNet Quantization-Aware Training Results
+==========================================
+
+Training Results:
+Final Training Accuracy: 100.00%
+Final Validation Accuracy: 97.05%
+Final Training Loss: 0.0002
+Final Validation Loss: 0.1327
+
+Model Information:
+Number of parameters before quantization: 57012034
+Number of parameters after quantization: 0
+Model size before quantization: 217.68 MB
+Model size after quantization: 54.56 MB
+Size reduction: 74.94%
+
+Non-Quantized QAT Model Performance:
+Test Accuracy: 97.05%
+Total Inference Time: 331.135157 seconds
+Average Inference Time per Image: 0.165568 seconds
+Memory Used: 32481280 bytes
+
+Quantized QAT Model Performance:
+Test Accuracy: 97.10%
+Total Inference Time: 14.741683 seconds
+Average Inference Time per Image: 0.007371 seconds
+Memory Used: 2007040 bytes
+
+Performance Comparison:
+Accuracy Change: 0.05%
+Inference Time Speedup: 22.46x
+Memory Usage Reduction: 93.82%
