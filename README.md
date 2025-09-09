@@ -22,9 +22,10 @@ Dataset: [Cats & Dogs (Kaggle)](https://www.kaggle.com/datasets/d4rklucif3r/cat-
 ---
 
 ## 📊 Dataset
-- **Cats vs Dogs dataset** (10,000 images).  
+- **Cats & Dogs dataset** (10,000 images).  
 - Preprocessing: resize (224×224), normalization, random crops/flips/rotations.  
 - Split: 80% training (4000 cats + 4000 dogs), 20% testing (1000 cats + 1,000 dogs).  
+- Single Prediction (1 image per class)
 
 ---
 
