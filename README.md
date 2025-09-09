@@ -1,6 +1,6 @@
 # Compressing Deep Neural Networks through Quantization
 
-This repository contains the MSc Artificial Intelligence dissertation project (University of Plymouth, PROJ518).  
+This repository contains the MSc Artificial Intelligence dissertation project for University of Plymouth, PROJ518.  
 The research investigates **quantization** as a method for compressing deep neural networks (DNNs), focusing on  
 **Post-Training Quantization (PTQ)** and **Quantization-Aware Training (QAT)** across multiple precision formats (**FP32, FP16, INT16, INT8**).
 
