@@ -12,3 +12,9 @@ mobilenet_v3_small = models.mobilenet_v3_small(weights=models.MobileNet_V3_Small
 mobilenet_v3_small.eval()
 torch.save(mobilenet_v3_small.state_dict(), "mobilenet_v3_small.pth")
 print("MobileNetV3-Small saved as mobilenet_v3_small.pth")
+
+# Download pretrained AlexNet
+alexnet = models.alexnet(weights=models.AlexNet_Weights.IMAGENET1K_V1)
+alexnet.eval()
+torch.save(alexnet.state_dict(), "alexnet.pth")
+print("AlexNet saved as alexnet.pth")
